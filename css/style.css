@@ -1,0 +1,133 @@
+/* HEADER */
+header::after {
+     content: "";
+     width: 100%;
+     height: 1px;
+     background: rgb(128, 128, 128);
+     position: absolute;
+
+}
+.container {
+     width: var(--container-width-sm);
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 30px 0;
+
+}
+.header_nav ul {
+     display: flex;
+     gap: 50px;
+}
+.nav_link {
+     color: var(--color-text);
+     font-weight: 500;
+     position: relative;
+
+}
+.icon_menu {
+     display: none;
+     color: black;
+     font-size: 20;
+}
+.line_effect {
+     width: 0%;
+     height: 2px;
+     background: var(--color-primary);
+     position: fixed;
+     pointer-events: none;
+     transition: all .25s;
+     z-index: 10;
+}
+.logo_toggle {
+     display: none;
+}
+/* END HEADER */
+
+/* Carousel */
+.carousel {
+     padding: 30px 0;
+}
+.carousel_content {
+     width: var(--container-width-sm);
+     margin: 0 auto;
+     background: red;
+     /* border-radius: 10px; */
+     display: flex;
+     justify-content: center;
+}
+.carousel_title {
+     background-color: #E7FAFE;
+}
+.carousel_hot {
+     background: white;
+     padding: 10px 20px;
+     border-radius: 50px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     filter: drop-shadow(10px 20px 40px rgba(41, 64, 70, 0.1));
+}
+.carousel_hot img {
+     width: 24px;
+     height: 24px;
+}
+.carousel_img img {
+     width: auto;
+     height: 100%;
+
+}
+/* End Carousel */
+
+
+
+
+/* Tablet Styles */
+/* HEADER */
+@media(max-width: 802px) {
+     body {
+          background-color: #F5CF8E;
+     }
+     .header_nav {
+          position: fixed;
+          height: 100%;
+          width: 50%;
+          left: -50%;
+          top: 0;
+          background-color: black;
+          z-index: 10;
+          transition: all .25s linear;
+     }
+     .header_nav.active {
+          left: 0;
+     }
+     .header_nav ul {
+          /* display: block; */
+          flex-direction: column;
+          align-items: center;
+          padding-top: 60px;
+     }
+     .nav_link {
+          color: white;
+     }
+     .logo_toggle {
+          display: block;
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 10px;
+     }
+
+     .logo_toggle i {
+          color: white;
+          cursor: pointer;
+          font-size: 25px;
+     }
+
+     .icon_menu {
+          display: block;
+          font-size: 25px;
+          margin-top: -6px;
+     }
+
+}
+/*END HEADER */
