@@ -16,7 +16,7 @@
      --color-primary: #0689FF;
      --container-width-lg: 70%;
      --container-width-md: 86%;
-     --container-width-sm: 90%;
+     --container-width-sm: 84%;
 }
 html {
      scroll-behavior: smooth;
@@ -43,4 +43,28 @@ body {
      transition: all .25s linear;
 }
 /*  */
-     
+
+.title {
+     text-align: center;
+}
+.title h2 {
+     font-size: 48px;
+     font-weight: 600;
+}
+.title p {
+     padding: 24px 0 70px 0px;
+     width: 48%;
+     margin: 0 auto;
+     color: #00000099;
+}
+    
+@media screen and (max-width: 46.188em) { 
+     .title h2 {
+          font-size: 32px;
+     }
+     .title p {
+          width: 85%;
+          font-size: 16px;
+          padding: 4px 0;
+     }  
+}
