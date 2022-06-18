@@ -707,9 +707,6 @@ color: rgba(0, 0, 0, 0.6);
 /* Tablet Styles */
 /* HEADER */
 @media(max-width: 820px) {
-     body {
-          background-color: #F5CF8E;
-     }
 
      .header_nav {
           position: fixed;
